@@ -1,24 +1,63 @@
-body {
-  padding-top: 20px;
+.navbar {
+  margin-bottom: 0;
 }
 
-.post-header {
-  padding-bottom: 3px;
-  border-bottom: 1px solid #ddd;
+.sidebar .nav a {
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.sidebar .version {
+.sidebar .nav > li {
+  width: 100%;
+}
+
+.sidebar .nav .nav-header {
+  color: #69c;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+  margin: 15px auto 10px auto;
+}
+
+.sidebar .nav li ul li {
+  border-left: 1px solid #e9eff2;
+}
+
+.jumbotron {
+  background-image: url("/static/img/jumbotron-background.png");
+  background-color: #69c;
   text-align: center;
-  font-size: 80%;
+  padding: 40px 0;
+  margin-bottom: 0;
+  color: rgba(255,255,255,0.75);
 }
 
-footer {
+.jumbotron a.btn {
   margin-top: 20px;
-  border-top: 1px solid #ddd;
+  border: none;
+  background-color: rgba(0,0,0,0.15);
+  color: #fff;
 }
 
-footer .built {
-  font-size: 80%;
+.jumbotron a.btn:hover {
+  background-color: rgba(0,0,0,0.25);
+  color: #fff;
+}
+
+#carousel .carousel-inner table {
+  height: 135px;
+  vertical-align: middle;
+}
+
+.main .fa {
+  color: #69c;
+}
+
+.doc-content > h1 {
+  color: #369;
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
 }
 
 code {
@@ -34,14 +73,19 @@ a[name] {
   font-size: 75%;
 }
 
-.production td {
-  padding: 10px;
-}
-
 ul ol, ol ul, ol ol, ul ul {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .client-libraries {
-    font-size: 80%;
+  font-size: 80%;
+}
+
+footer {
+  font-size: 12px;
+  color: #333;
+}
+
+.production td {
+  padding: 10px;
 }
