@@ -96,8 +96,11 @@ guarantee.  See [features & guarantees][features_guarantees].
         <h2><i class="fa fa-globe"></i> Scalable</h2>
         <p class="desc">
 {% capture scalable %}
-**NSQ** scales horizontally, without any centralized brokers.  Seamlessly add more producers and
-consumers to your cluster with automatic discovery.
+**NSQ** scales horizontally, without any centralized brokers.  Built-in discovery simplifies the
+addition of nodes to the cluster.  Supports both pub-sub and load-balanced message delivery.
+It's [fast][performance], too.
+
+[performance]: {{ site.baseurl }}/overview/performance.html
 {% endcapture %}
 {{ scalable | markdownify }}</p>
       </div>
@@ -105,17 +108,18 @@ consumers to your cluster with automatic discovery.
         <h2><i class="fa fa-cogs"></i> Ops Friendly</h2>
         <p class="desc">
 {% capture operations %}
-**NSQ** is easy to configure and deploy (compiled binaries have no runtime dependencies). For
-maximum flexibility, it is data format agnostic.
+**NSQ** is easy to configure and deploy (compiled binaries have no runtime dependencies) and comes
+bundled with an administrative UI.  For maximum flexibility, it is data format agnostic.
 {% endcapture %}
 {{ operations | markdownify }}</p>
       </div>
       <div class="col-md-3">
-        <h2><i class="fa fa-code"></i> Client Libraries</h2>
+        <h2><i class="fa fa-code"></i> Integrated</h2>
         <p class="desc">
 {% capture clientlibs %}
-Official Go and Python libraries are available out of the box and, if you're interested in building
-your own client, there's a [protocol spec][protocol] (see [client libraries][client_libraries]).
+Official Go and Python libraries are available as well as many community supported libraries
+for most major languages (see [client libraries][client_libraries]). If you're interested in building
+your own, there's a [protocol spec][protocol].
 
 [protocol]: {{ site.baseurl }}/clients/tcp_protocol_spec.html
 [client_libraries]: {{ site.baseurl }}/clients/client_libraries.html
