@@ -62,6 +62,18 @@ body {
   color: #69c;
 }
 
+.main p {
+  font-size: 16px;
+  line-height: 1.8em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.doc-content {
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
 .doc-content > h1 {
   color: #369;
   text-transform: uppercase;

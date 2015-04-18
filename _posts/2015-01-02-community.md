@@ -15,13 +15,12 @@ permalink: /community.html
 
 ### Issues
 
-All issues should be reported via [github issues][github_issues]. Don't forget to search through the
-existing issues to see if that topic has come up before posting.
+All issues should be reported via [github issues][github_issues].
 
 ### Contributing
 
-NSQ has a growing community and contributions are always welcome (particularly documentation).
-To contribute, fork the project on [github][github_nsq] and send a pull request.
+NSQ has a growing community and contributions are always welcome. To contribute, fork the project
+on [github][github_nsq] and send a pull request.
 
 ### Acknowledgements
 
@@ -30,7 +29,7 @@ NSQ was designed and developed by Matt Reiferson ([@imsnakes][snakes_twitter]) a
 and all our [contributors][contributors].
 
 [github_issues]: https://github.com/nsqio/nsq/issues
-[github_nsq]: http://github.com/nsqio/nsq
+[github_nsq]: https://github.com/nsqio/nsq
 [google_group]: http://groups.google.com/group/nsq-users
 [snakes_twitter]: https://twitter.com/imsnakes
 [jehiah_twitter]: https://twitter.com/jehiah
