@@ -96,10 +96,11 @@ guarantee.  See [features & guarantees][features_guarantees].
         <h2><i class="fa fa-globe"></i> Scalable</h2>
         <p class="desc">
 {% capture scalable %}
-**NSQ** scales horizontally, without any centralized brokers.  Built-in discovery simplifies the
-addition of nodes to the cluster.  Supports both pub-sub and load-balanced message delivery.
-It's [fast][performance], too.
+**NSQ** [scales horizontally][topology], without any centralized brokers.  Built-in discovery
+simplifies the addition of nodes to the cluster.  Supports both pub-sub and load-balanced message
+delivery.  It's [fast][performance], too.
 
+[topology]: {{ site.baseurl }}/deployment/topology_patterns.html
 [performance]: {{ site.baseurl }}/overview/performance.html
 {% endcapture %}
 {{ scalable | markdownify }}</p>
@@ -108,8 +109,14 @@ It's [fast][performance], too.
         <h2><i class="fa fa-cogs"></i> Ops Friendly</h2>
         <p class="desc">
 {% capture operations %}
-**NSQ** is easy to configure and deploy (compiled binaries have no runtime dependencies) and comes
-bundled with an administrative UI.  For maximum flexibility, it is data format agnostic.
+**NSQ** is easy to [configure and deploy][production] and comes bundled with an
+admin UI.  Binaries have no runtime dependencies and we provide
+[pre-compiled releases][installing] for linux and darwin as well as an official
+[Docker image][docker].
+
+[docker]: {{ site.baseurl }}/deployment/docker.html
+[installing]: {{ site.baseurl }}/deployment/installing.html
+[production]: {{ site.baseurl }}/deployment/production.html
 {% endcapture %}
 {{ operations | markdownify }}</p>
       </div>
@@ -118,9 +125,10 @@ bundled with an administrative UI.  For maximum flexibility, it is data format a
         <p class="desc">
 {% capture clientlibs %}
 Official Go and Python libraries are available as well as many community supported libraries
-for most major languages (see [client libraries][client_libraries]). If you're interested in building
-your own, there's a [protocol spec][protocol].
+for most major languages (see [client libraries][client_libraries]). If you're interested in
+[building your own][build_cl], there's a [protocol spec][protocol].
 
+[build_cl]: {{ site.baseurl }}/clients/building_client_libraries.html
 [protocol]: {{ site.baseurl }}/clients/tcp_protocol_spec.html
 [client_libraries]: {{ site.baseurl }}/clients/client_libraries.html
 {% endcapture %}
