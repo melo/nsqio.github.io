@@ -33,7 +33,7 @@ body {
 }
 
 .jumbotron {
-  background-image: url("/static/img/jumbotron-background.png");
+/*  background-image: url("/static/img/jumbotron-background.png");*/
   background-color: #69c;
   text-align: center;
   padding: 40px 0;
